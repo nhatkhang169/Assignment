@@ -51,6 +51,10 @@
 		F50EBB8127ED655E007A201F /* UserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB8027ED655E007A201F /* UserDefaultsProtocol.swift */; };
 		F50EBB8427ED676F007A201F /* WeatherRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB8327ED676F007A201F /* WeatherRepositoryTests.swift */; };
 		F50EBB8627ED67CF007A201F /* UserDefaultsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB8527ED67CF007A201F /* UserDefaultsMock.swift */; };
+		F50EBB8927ED72CA007A201F /* WeatherInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB8827ED72CA007A201F /* WeatherInteractorTests.swift */; };
+		F50EBB8B27ED73AB007A201F /* ForecastApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB8A27ED73AB007A201F /* ForecastApiMock.swift */; };
+		F50EBB8D27ED74FB007A201F /* WeatherRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB8C27ED74FB007A201F /* WeatherRepositoryMock.swift */; };
+		F50EBB9027ED7772007A201F /* DayWeatherStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB8F27ED7772007A201F /* DayWeatherStub.swift */; };
 		F51A25E827E5B40700D77F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25E727E5B40700D77F8E /* AppDelegate.swift */; };
 		F51A25EA27E5B40700D77F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25E927E5B40700D77F8E /* SceneDelegate.swift */; };
 		F51A25EF27E5B40700D77F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51A25ED27E5B40700D77F8E /* Main.storyboard */; };
@@ -128,6 +132,10 @@
 		F50EBB8027ED655E007A201F /* UserDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsProtocol.swift; sourceTree = "<group>"; };
 		F50EBB8327ED676F007A201F /* WeatherRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryTests.swift; sourceTree = "<group>"; };
 		F50EBB8527ED67CF007A201F /* UserDefaultsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsMock.swift; sourceTree = "<group>"; };
+		F50EBB8827ED72CA007A201F /* WeatherInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractorTests.swift; sourceTree = "<group>"; };
+		F50EBB8A27ED73AB007A201F /* ForecastApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastApiMock.swift; sourceTree = "<group>"; };
+		F50EBB8C27ED74FB007A201F /* WeatherRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryMock.swift; sourceTree = "<group>"; };
+		F50EBB8F27ED7772007A201F /* DayWeatherStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherStub.swift; sourceTree = "<group>"; };
 		F51A25E427E5B40700D77F8E /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51A25E727E5B40700D77F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51A25E927E5B40700D77F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -326,16 +334,34 @@
 			children = (
 				F50EBB7E27ED488B007A201F /* ApiClientMock.swift */,
 				F50EBB8527ED67CF007A201F /* UserDefaultsMock.swift */,
+				F50EBB8A27ED73AB007A201F /* ForecastApiMock.swift */,
+				F50EBB8C27ED74FB007A201F /* WeatherRepositoryMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		F50EBB8227ED674C007A201F /* Repository */ = {
+		F50EBB8227ED674C007A201F /* Repositorys */ = {
 			isa = PBXGroup;
 			children = (
 				F50EBB8327ED676F007A201F /* WeatherRepositoryTests.swift */,
 			);
-			path = Repository;
+			path = Repositorys;
+			sourceTree = "<group>";
+		};
+		F50EBB8727ED72B2007A201F /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				F50EBB8827ED72CA007A201F /* WeatherInteractorTests.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		F50EBB8E27ED7758007A201F /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				F50EBB8F27ED7772007A201F /* DayWeatherStub.swift */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 		F51A25DB27E5B40700D77F8E = {
@@ -380,7 +406,9 @@
 		F51A25FD27E5B40800D77F8E /* AssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				F50EBB8227ED674C007A201F /* Repository */,
+				F50EBB8E27ED7758007A201F /* Stubs */,
+				F50EBB8727ED72B2007A201F /* Interactors */,
+				F50EBB8227ED674C007A201F /* Repositorys */,
 				F50EBB7D27ED4864007A201F /* Mocks */,
 				F50EBB7A27ED47FB007A201F /* API */,
 			);
@@ -746,9 +774,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F50EBB8427ED676F007A201F /* WeatherRepositoryTests.swift in Sources */,
+				F50EBB8D27ED74FB007A201F /* WeatherRepositoryMock.swift in Sources */,
 				F50EBB7F27ED488B007A201F /* ApiClientMock.swift in Sources */,
+				F50EBB9027ED7772007A201F /* DayWeatherStub.swift in Sources */,
 				F50EBB8627ED67CF007A201F /* UserDefaultsMock.swift in Sources */,
+				F50EBB8B27ED73AB007A201F /* ForecastApiMock.swift in Sources */,
 				F50EBB7C27ED4810007A201F /* ForecastApiTests.swift in Sources */,
+				F50EBB8927ED72CA007A201F /* WeatherInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
