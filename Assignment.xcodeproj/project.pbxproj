@@ -55,6 +55,8 @@
 		F50EBB8B27ED73AB007A201F /* ForecastApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB8A27ED73AB007A201F /* ForecastApiMock.swift */; };
 		F50EBB8D27ED74FB007A201F /* WeatherRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB8C27ED74FB007A201F /* WeatherRepositoryMock.swift */; };
 		F50EBB9027ED7772007A201F /* DayWeatherStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB8F27ED7772007A201F /* DayWeatherStub.swift */; };
+		F50EBB9327EDAE1D007A201F /* ForecastViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB9227EDAE1D007A201F /* ForecastViewModelTests.swift */; };
+		F50EBB9527EDAE85007A201F /* WeatherInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB9427EDAE85007A201F /* WeatherInteractorMock.swift */; };
 		F51A25E827E5B40700D77F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25E727E5B40700D77F8E /* AppDelegate.swift */; };
 		F51A25EA27E5B40700D77F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25E927E5B40700D77F8E /* SceneDelegate.swift */; };
 		F51A25EF27E5B40700D77F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51A25ED27E5B40700D77F8E /* Main.storyboard */; };
@@ -136,6 +138,8 @@
 		F50EBB8A27ED73AB007A201F /* ForecastApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastApiMock.swift; sourceTree = "<group>"; };
 		F50EBB8C27ED74FB007A201F /* WeatherRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryMock.swift; sourceTree = "<group>"; };
 		F50EBB8F27ED7772007A201F /* DayWeatherStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherStub.swift; sourceTree = "<group>"; };
+		F50EBB9227EDAE1D007A201F /* ForecastViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModelTests.swift; sourceTree = "<group>"; };
+		F50EBB9427EDAE85007A201F /* WeatherInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractorMock.swift; sourceTree = "<group>"; };
 		F51A25E427E5B40700D77F8E /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51A25E727E5B40700D77F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51A25E927E5B40700D77F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -336,6 +340,7 @@
 				F50EBB8527ED67CF007A201F /* UserDefaultsMock.swift */,
 				F50EBB8A27ED73AB007A201F /* ForecastApiMock.swift */,
 				F50EBB8C27ED74FB007A201F /* WeatherRepositoryMock.swift */,
+				F50EBB9427EDAE85007A201F /* WeatherInteractorMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -362,6 +367,14 @@
 				F50EBB8F27ED7772007A201F /* DayWeatherStub.swift */,
 			);
 			path = Stubs;
+			sourceTree = "<group>";
+		};
+		F50EBB9127EDAE03007A201F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F50EBB9227EDAE1D007A201F /* ForecastViewModelTests.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		F51A25DB27E5B40700D77F8E = {
@@ -406,6 +419,7 @@
 		F51A25FD27E5B40800D77F8E /* AssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				F50EBB9127EDAE03007A201F /* ViewModels */,
 				F50EBB8E27ED7758007A201F /* Stubs */,
 				F50EBB8727ED72B2007A201F /* Interactors */,
 				F50EBB8227ED674C007A201F /* Repositorys */,
@@ -773,6 +787,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50EBB9327EDAE1D007A201F /* ForecastViewModelTests.swift in Sources */,
+				F50EBB9527EDAE85007A201F /* WeatherInteractorMock.swift in Sources */,
 				F50EBB8427ED676F007A201F /* WeatherRepositoryTests.swift in Sources */,
 				F50EBB8D27ED74FB007A201F /* WeatherRepositoryMock.swift in Sources */,
 				F50EBB7F27ED488B007A201F /* ApiClientMock.swift in Sources */,
