@@ -46,7 +46,6 @@
 		F50EBB4027E8AE24007A201F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB3F27E8AE24007A201F /* UIView+Extensions.swift */; };
 		F50EBB4227E8C994007A201F /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB4127E8C994007A201F /* Booking.swift */; };
 		F50EBB4427E8D4DB007A201F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB4327E8D4DB007A201F /* Utils.swift */; };
-		F50EBB4627E8D9B1007A201F /* monthlyBookings.json in Resources */ = {isa = PBXBuildFile; fileRef = F50EBB4527E8D9B1007A201F /* monthlyBookings.json */; };
 		F50EBB4827E8DB79007A201F /* BookingsListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50EBB4727E8DB79007A201F /* BookingsListView.xib */; };
 		F50EBB4A27E8DB81007A201F /* BookingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB4927E8DB81007A201F /* BookingsListView.swift */; };
 		F50EBB5027EAD074007A201F /* DayTempEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB4F27EAD074007A201F /* DayTempEntity.swift */; };
@@ -66,6 +65,7 @@
 		F50EBB7127EB1E24007A201F /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB7027EB1E24007A201F /* ForecastViewModel.swift */; };
 		F50EBB7327EB29FD007A201F /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB7227EB29FD007A201F /* ForecastCell.swift */; };
 		F50EBB7527EB2A3A007A201F /* ForecastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB7427EB2A3A007A201F /* ForecastCellViewModel.swift */; };
+		F50EBB7727EC07B4007A201F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB7627EC07B4007A201F /* String+Extensions.swift */; };
 		F51A25E827E5B40700D77F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25E727E5B40700D77F8E /* AppDelegate.swift */; };
 		F51A25EA27E5B40700D77F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25E927E5B40700D77F8E /* SceneDelegate.swift */; };
 		F51A25EC27E5B40700D77F8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25EB27E5B40700D77F8E /* ViewController.swift */; };
@@ -143,7 +143,6 @@
 		F50EBB3F27E8AE24007A201F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		F50EBB4127E8C994007A201F /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
 		F50EBB4327E8D4DB007A201F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		F50EBB4527E8D9B1007A201F /* monthlyBookings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monthlyBookings.json; sourceTree = "<group>"; };
 		F50EBB4727E8DB79007A201F /* BookingsListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingsListView.xib; sourceTree = "<group>"; };
 		F50EBB4927E8DB81007A201F /* BookingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsListView.swift; sourceTree = "<group>"; };
 		F50EBB4F27EAD074007A201F /* DayTempEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTempEntity.swift; sourceTree = "<group>"; };
@@ -163,6 +162,7 @@
 		F50EBB7027EB1E24007A201F /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		F50EBB7227EB29FD007A201F /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		F50EBB7427EB2A3A007A201F /* ForecastCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCellViewModel.swift; sourceTree = "<group>"; };
+		F50EBB7627EC07B4007A201F /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F51A25E427E5B40700D77F8E /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51A25E727E5B40700D77F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51A25E927E5B40700D77F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -272,7 +272,6 @@
 		F50EBB0327E7203C007A201F /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				F50EBB4527E8D9B1007A201F /* monthlyBookings.json */,
 				F50EBB0627E7213C007A201F /* Configurations.swift */,
 				F51A25E727E5B40700D77F8E /* AppDelegate.swift */,
 				F51A25E927E5B40700D77F8E /* SceneDelegate.swift */,
@@ -354,6 +353,7 @@
 				F50EBB3F27E8AE24007A201F /* UIView+Extensions.swift */,
 				F50EBB4327E8D4DB007A201F /* Utils.swift */,
 				F50EBB6D27EB17C6007A201F /* UISearchController+Extensions.swift */,
+				F50EBB7627EC07B4007A201F /* String+Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -646,7 +646,6 @@
 				F50EBB3027E85ABB007A201F /* BookingDetailView.xib in Resources */,
 				F50EBB2827E81078007A201F /* AqiPlaceView.xib in Resources */,
 				F51A25F427E5B40800D77F8E /* LaunchScreen.storyboard in Resources */,
-				F50EBB4627E8D9B1007A201F /* monthlyBookings.json in Resources */,
 				F51A25F127E5B40800D77F8E /* Assets.xcassets in Resources */,
 				F51A25EF27E5B40700D77F8E /* Main.storyboard in Resources */,
 			);
@@ -846,6 +845,7 @@
 				F50EBB1827E72F99007A201F /* AqiJsonTransformer.swift in Sources */,
 				F50EBB3E27E89328007A201F /* BookingRepository.swift in Sources */,
 				F50EBB0B27E72532007A201F /* ViewModel.swift in Sources */,
+				F50EBB7727EC07B4007A201F /* String+Extensions.swift in Sources */,
 				F50EBB1A27E72FE2007A201F /* JsonTransformer.swift in Sources */,
 				F51A25EA27E5B40700D77F8E /* SceneDelegate.swift in Sources */,
 				F50EBB5D27EAFE34007A201F /* ForecastJsonTransformer.swift in Sources */,

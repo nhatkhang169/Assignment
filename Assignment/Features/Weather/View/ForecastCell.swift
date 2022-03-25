@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Kingfisher
+import SwiftUI
 
 class ForecastCell: UITableViewCell {
     static let identifier = "ForecastCell"
@@ -19,6 +21,19 @@ class ForecastCell: UITableViewCell {
         setupUI()
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        pressureLabel.text = ""
+        dateLabel.text = ""
+        tempLabel.text = ""
+        pressureLabel.text = ""
+        humidityLabel.text = ""
+        
+        weatherIcon.image = nil
+        weatherIcon.kf.cancelDownloadTask()
+    }
+    
     var viewModel: ForecastCellViewModelProtocol? = nil {
         didSet {
             fillData()
@@ -28,41 +43,37 @@ class ForecastCell: UITableViewCell {
     private lazy var dateLabel: UILabel = {
         var view = UILabel(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
     private lazy var tempLabel: UILabel = {
         var view = UILabel(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
     private lazy var pressureLabel: UILabel = {
         var view = UILabel(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
     private lazy var humidityLabel: UILabel = {
         var view = UILabel(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
     private lazy var descLabel: UILabel = {
         var view = UILabel(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
     private lazy var weatherIcon: UIImageView = {
         var view = UIImageView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.contentMode = .scaleAspectFit
         return view
     }()
 }
@@ -133,8 +144,8 @@ extension ForecastCell {
         NSLayoutConstraint.activate([
             weatherIcon.centerYAnchor.constraint(equalTo: pressureLabel.centerYAnchor),
             weatherIcon.leadingAnchor.constraint(equalTo: pressureLabel.trailingAnchor),
-            weatherIcon.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30),
-            weatherIcon.heightAnchor.constraint(equalToConstant: 30),
+            weatherIcon.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            weatherIcon.heightAnchor.constraint(equalToConstant: 50),
             weatherIcon.widthAnchor.constraint(equalTo: weatherIcon.heightAnchor)
         ])
     }
@@ -149,7 +160,7 @@ extension ForecastCell {
         pressureLabel.text = model.pressureText
         humidityLabel.text = model.humidityText
         descLabel.text = model.descText
-//        weatherIcon.set
+        weatherIcon.kf.setImage(with: model.iconUrl)
     }
     
     

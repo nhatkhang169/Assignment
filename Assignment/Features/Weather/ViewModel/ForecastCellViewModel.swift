@@ -13,6 +13,7 @@ protocol ForecastCellViewModelProtocol {
     var pressureText: String { get }
     var humidityText: String { get }
     var descText: String { get }
+    var iconUrl: URL? { get }
 }
 
 class ForecastCellViewModel: BaseViewModel {
@@ -52,6 +53,12 @@ extension ForecastCellViewModel: ForecastCellViewModelProtocol {
     
     var descText: String {
         return "Description: \(model.description)"
+    }
+    
+    var iconUrl: URL? {
+        let remoteFilePathFormat = Components.instance.configurations.weatherIconUrl
+        let remoteFilePath = String(format: remoteFilePathFormat, model.icon.formatWeatherIcon())
+        return URL(string: remoteFilePath)
     }
 }
 

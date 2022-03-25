@@ -32,6 +32,7 @@ class ForecastViewController: BaseViewController {
         view.separatorStyle = .singleLine
         view.separatorInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         view.tableHeaderView = UIView()
+        view.allowsSelection = false
         return view
     }()
 }
