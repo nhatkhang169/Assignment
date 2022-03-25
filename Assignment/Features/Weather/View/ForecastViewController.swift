@@ -24,7 +24,7 @@ class ForecastViewController: BaseViewController {
     
     var viewModel: ForecastViewModelProtocol = ForecastViewModel(interactor: Components.weatherInteractor())
     
-    private lazy var tableView: UITableView = {
+    lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.showsHorizontalScrollIndicator = false
