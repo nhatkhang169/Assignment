@@ -7,8 +7,7 @@ target 'Assignment' do
 
   # Pods for Assignment
   pod 'Alamofire'
-  pod 'GoogleMaps'
-
+  
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
   pod 'SwiftHTTP'

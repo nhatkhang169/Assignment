@@ -1,10 +1,5 @@
 PODS:
   - Alamofire (5.5.0)
-  - GoogleMaps (6.1.0):
-    - GoogleMaps/Maps (= 6.1.0)
-  - GoogleMaps/Base (6.1.0)
-  - GoogleMaps/Maps (6.1.0):
-    - GoogleMaps/Base
   - Kingfisher (7.2.0)
   - ReachabilitySwift (5.0.0)
   - RxCocoa (4.5.0):
@@ -15,7 +10,6 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - GoogleMaps
   - Kingfisher
   - ReachabilitySwift
   - RxCocoa (~> 4.0)
@@ -26,7 +20,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - GoogleMaps
     - Kingfisher
     - ReachabilitySwift
     - RxCocoa
@@ -36,7 +29,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
-  GoogleMaps: cffc5d24ce920063aaeebe6ac4dbaaca1dd7f377
   Kingfisher: 3ac0b75b155cabc0e544877d1a4deea29feece92
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
@@ -44,6 +36,6 @@ SPEC CHECKSUMS:
   SwiftHTTP: e94f1aa8cde58637dcc0100f6349de31a3337fde
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 57844f4180237b83e47e89a5fe4a2ac7d3d19302
+PODFILE CHECKSUM: 02043576085797f0261ac6e9b0b40f8325cc757e
 
 COCOAPODS: 1.8.4

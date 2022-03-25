@@ -41,14 +41,6 @@ class Components {
     //----------------------------------------------------------------------------------------------
     // MARK: Begin Repository */
     
-    static var aqiRepository: AqiRepository = {
-        return AqiRepositoryImpl()
-    }()
-    
-    static var bookingRepository: BookingRepository = {
-        return BookingRepositoryImpl()
-    }()
-    
     private lazy var weatherRepository: WeatherRepository = {
         return WeatherRepositoryImpl(expireTime: self.configurations.cacheExpiredTime)
     }()
@@ -56,17 +48,6 @@ class Components {
     //----------------------------------------------------------------------------------------------
     // MARK: Api */
 
-    private lazy var aqiApi: AqiApi = {
-        return AqiApiImpl(apiClient: self.apiClient,
-                          transformer: self.aqiJsonTransformer.transform)
-    }()
-    
-    private lazy var bookingApi: BookingApi = {
-        return BookingApiImpl(apiClient: self.apiClient,
-                              transformer: self.bookingJsonTransformer.transform,
-                              listTransformer: self.bookingJsonTransformer.listTransform)
-    }()
-    
     private lazy var forecastApi: ForecastApi = {
         return ForecastApiImpl(apiClient: self.apiClient,
                                transformer: self.forecastJsonTransformer.transform)
@@ -74,14 +55,6 @@ class Components {
     
     //----------------------------------------------------------------------------------------------
     // MARK: Transformer */
-    
-    private lazy var aqiJsonTransformer: AqiJsonTransformer = {
-        return AqiJsonTransformer()
-    }()
-    
-    private lazy var bookingJsonTransformer: BookingJsonTransformer = {
-        return BookingJsonTransformer()
-    }()
     
     private lazy var forecastJsonTransformer: ForecastJsonTransformer = {
         return ForecastJsonTransformer(dayWeatherTransform: dayWeatherTransform)
@@ -102,13 +75,6 @@ class Components {
     //----------------------------------------------------------------------------------------------
     // MARK: Interactor */
 
-    static func bookingInteractor() -> BookingInteractor {
-        return BookingInteractorImpl(aqiApi: instance.aqiApi,
-                                     aqiRepository: Components.aqiRepository,
-                                     bookingApi: instance.bookingApi,
-                                     bookingRepository: Components.bookingRepository)
-    }
-    
     static func weatherInteractor() -> WeatherInteractor {
         return WeatherInteractorImpl(forecastApi: instance.forecastApi,
                                      weatherRepository: instance.weatherRepository)

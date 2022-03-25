@@ -20,34 +20,13 @@
 		F50EBB0527E7208A007A201F /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB0427E7208A007A201F /* Components.swift */; };
 		F50EBB0727E7213C007A201F /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB0627E7213C007A201F /* Configurations.swift */; };
 		F50EBB0927E724EA007A201F /* BaseClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB0827E724EA007A201F /* BaseClasses.swift */; };
-		F50EBB0B27E72532007A201F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB0A27E72532007A201F /* ViewModel.swift */; };
-		F50EBB1127E72656007A201F /* BookingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB1027E72656007A201F /* BookingInteractor.swift */; };
-		F50EBB1427E727D0007A201F /* AqiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB1327E727D0007A201F /* AqiApi.swift */; };
-		F50EBB1627E72AEA007A201F /* AqiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB1527E72AEA007A201F /* AqiRepository.swift */; };
-		F50EBB1827E72F99007A201F /* AqiJsonTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB1727E72F99007A201F /* AqiJsonTransformer.swift */; };
 		F50EBB1A27E72FE2007A201F /* JsonTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB1927E72FE2007A201F /* JsonTransformer.swift */; };
 		F50EBB1D27E73F99007A201F /* RxSwift+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB1C27E73F99007A201F /* RxSwift+Extensions.swift */; };
 		F50EBB1F27E74796007A201F /* configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = F50EBB1E27E74796007A201F /* configuration.plist */; };
-		F50EBB2227E778C4007A201F /* AqiPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB2127E778C4007A201F /* AqiPlace.swift */; };
-		F50EBB2427E77C9C007A201F /* BookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB2327E77C9C007A201F /* BookingViewModel.swift */; };
 		F50EBB2627E7886E007A201F /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB2527E7886E007A201F /* Enums.swift */; };
-		F50EBB2827E81078007A201F /* AqiPlaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50EBB2727E81078007A201F /* AqiPlaceView.xib */; };
-		F50EBB2A27E81099007A201F /* AqiPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB2927E81099007A201F /* AqiPlaceView.swift */; };
-		F50EBB2C27E81589007A201F /* AqiPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB2B27E81589007A201F /* AqiPlaceViewModel.swift */; };
 		F50EBB2E27E85A4C007A201F /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB2D27E85A4C007A201F /* RoundedCornerView.swift */; };
-		F50EBB3027E85ABB007A201F /* BookingDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50EBB2F27E85ABB007A201F /* BookingDetailView.xib */; };
-		F50EBB3227E85AC3007A201F /* BookingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB3127E85AC3007A201F /* BookingDetailView.swift */; };
-		F50EBB3427E85FBB007A201F /* AqiPlaceSummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50EBB3327E85FBB007A201F /* AqiPlaceSummaryView.xib */; };
-		F50EBB3627E85FC5007A201F /* AqiPlaceSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB3527E85FC5007A201F /* AqiPlaceSummaryView.swift */; };
-		F50EBB3827E869B4007A201F /* BookingDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB3727E869B4007A201F /* BookingDetailViewModel.swift */; };
-		F50EBB3A27E88D57007A201F /* BookingApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB3927E88D57007A201F /* BookingApi.swift */; };
-		F50EBB3C27E891C1007A201F /* BookingJsonTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB3B27E891C1007A201F /* BookingJsonTransformer.swift */; };
-		F50EBB3E27E89328007A201F /* BookingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB3D27E89328007A201F /* BookingRepository.swift */; };
 		F50EBB4027E8AE24007A201F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB3F27E8AE24007A201F /* UIView+Extensions.swift */; };
-		F50EBB4227E8C994007A201F /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB4127E8C994007A201F /* Booking.swift */; };
 		F50EBB4427E8D4DB007A201F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB4327E8D4DB007A201F /* Utils.swift */; };
-		F50EBB4827E8DB79007A201F /* BookingsListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50EBB4727E8DB79007A201F /* BookingsListView.xib */; };
-		F50EBB4A27E8DB81007A201F /* BookingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB4927E8DB81007A201F /* BookingsListView.swift */; };
 		F50EBB5027EAD074007A201F /* DayTempEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB4F27EAD074007A201F /* DayTempEntity.swift */; };
 		F50EBB5227EAD0DD007A201F /* DayWeatherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB5127EAD0DD007A201F /* DayWeatherEntity.swift */; };
 		F50EBB5427EAD17F007A201F /* WeatherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB5327EAD17F007A201F /* WeatherEntity.swift */; };
@@ -69,16 +48,12 @@
 		F50EBB7927EC6569007A201F /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB7827EC6569007A201F /* WeatherRepository.swift */; };
 		F51A25E827E5B40700D77F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25E727E5B40700D77F8E /* AppDelegate.swift */; };
 		F51A25EA27E5B40700D77F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25E927E5B40700D77F8E /* SceneDelegate.swift */; };
-		F51A25EC27E5B40700D77F8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25EB27E5B40700D77F8E /* ViewController.swift */; };
 		F51A25EF27E5B40700D77F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51A25ED27E5B40700D77F8E /* Main.storyboard */; };
 		F51A25F127E5B40800D77F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51A25F027E5B40800D77F8E /* Assets.xcassets */; };
 		F51A25F427E5B40800D77F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51A25F227E5B40800D77F8E /* LaunchScreen.storyboard */; };
 		F51A25FF27E5B40800D77F8E /* AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25FE27E5B40800D77F8E /* AssignmentTests.swift */; };
 		F51A260927E5B40800D77F8E /* AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A260827E5B40800D77F8E /* AssignmentUITests.swift */; };
 		F51A260B27E5B40800D77F8E /* AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A260A27E5B40800D77F8E /* AssignmentUITestsLaunchTests.swift */; };
-		F51A261927E5DCBE00D77F8E /* BookingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51A261827E5DCBE00D77F8E /* BookingView.xib */; };
-		F51A261B27E5E23300D77F8E /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A261A27E5E23300D77F8E /* BookingView.swift */; };
-		F5254C3827E6E10F007F1AF0 /* Aqi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5254C3727E6E10F007F1AF0 /* Aqi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,34 +93,13 @@
 		F50EBB0427E7208A007A201F /* Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		F50EBB0627E7213C007A201F /* Configurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 		F50EBB0827E724EA007A201F /* BaseClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClasses.swift; sourceTree = "<group>"; };
-		F50EBB0A27E72532007A201F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		F50EBB1027E72656007A201F /* BookingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingInteractor.swift; sourceTree = "<group>"; };
-		F50EBB1327E727D0007A201F /* AqiApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqiApi.swift; sourceTree = "<group>"; };
-		F50EBB1527E72AEA007A201F /* AqiRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AqiRepository.swift; sourceTree = "<group>"; };
-		F50EBB1727E72F99007A201F /* AqiJsonTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqiJsonTransformer.swift; sourceTree = "<group>"; };
 		F50EBB1927E72FE2007A201F /* JsonTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonTransformer.swift; sourceTree = "<group>"; };
 		F50EBB1C27E73F99007A201F /* RxSwift+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Extensions.swift"; sourceTree = "<group>"; };
 		F50EBB1E27E74796007A201F /* configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = configuration.plist; sourceTree = "<group>"; };
-		F50EBB2127E778C4007A201F /* AqiPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqiPlace.swift; sourceTree = "<group>"; };
-		F50EBB2327E77C9C007A201F /* BookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModel.swift; sourceTree = "<group>"; };
 		F50EBB2527E7886E007A201F /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		F50EBB2727E81078007A201F /* AqiPlaceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AqiPlaceView.xib; sourceTree = "<group>"; };
-		F50EBB2927E81099007A201F /* AqiPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqiPlaceView.swift; sourceTree = "<group>"; };
-		F50EBB2B27E81589007A201F /* AqiPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqiPlaceViewModel.swift; sourceTree = "<group>"; };
 		F50EBB2D27E85A4C007A201F /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
-		F50EBB2F27E85ABB007A201F /* BookingDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingDetailView.xib; sourceTree = "<group>"; };
-		F50EBB3127E85AC3007A201F /* BookingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailView.swift; sourceTree = "<group>"; };
-		F50EBB3327E85FBB007A201F /* AqiPlaceSummaryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AqiPlaceSummaryView.xib; sourceTree = "<group>"; };
-		F50EBB3527E85FC5007A201F /* AqiPlaceSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqiPlaceSummaryView.swift; sourceTree = "<group>"; };
-		F50EBB3727E869B4007A201F /* BookingDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailViewModel.swift; sourceTree = "<group>"; };
-		F50EBB3927E88D57007A201F /* BookingApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingApi.swift; sourceTree = "<group>"; };
-		F50EBB3B27E891C1007A201F /* BookingJsonTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingJsonTransformer.swift; sourceTree = "<group>"; };
-		F50EBB3D27E89328007A201F /* BookingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingRepository.swift; sourceTree = "<group>"; };
 		F50EBB3F27E8AE24007A201F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		F50EBB4127E8C994007A201F /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
 		F50EBB4327E8D4DB007A201F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		F50EBB4727E8DB79007A201F /* BookingsListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingsListView.xib; sourceTree = "<group>"; };
-		F50EBB4927E8DB81007A201F /* BookingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsListView.swift; sourceTree = "<group>"; };
 		F50EBB4F27EAD074007A201F /* DayTempEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTempEntity.swift; sourceTree = "<group>"; };
 		F50EBB5127EAD0DD007A201F /* DayWeatherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherEntity.swift; sourceTree = "<group>"; };
 		F50EBB5327EAD17F007A201F /* WeatherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntity.swift; sourceTree = "<group>"; };
@@ -168,7 +122,6 @@
 		F51A25E427E5B40700D77F8E /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51A25E727E5B40700D77F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51A25E927E5B40700D77F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F51A25EB27E5B40700D77F8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F51A25EE27E5B40700D77F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F51A25F027E5B40800D77F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F51A25F327E5B40800D77F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -178,9 +131,6 @@
 		F51A260427E5B40800D77F8E /* AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51A260827E5B40800D77F8E /* AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentUITests.swift; sourceTree = "<group>"; };
 		F51A260A27E5B40800D77F8E /* AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F51A261827E5DCBE00D77F8E /* BookingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingView.xib; sourceTree = "<group>"; };
-		F51A261A27E5E23300D77F8E /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
-		F5254C3727E6E10F007F1AF0 /* Aqi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aqi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,61 +233,10 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		F50EBB0C27E72604007A201F /* Booking */ = {
-			isa = PBXGroup;
-			children = (
-				F50EBB0F27E72647007A201F /* Interactor */,
-				F50EBB0E27E7261D007A201F /* ViewModel */,
-				F50EBB0D27E7260F007A201F /* View */,
-			);
-			path = Booking;
-			sourceTree = "<group>";
-		};
-		F50EBB0D27E7260F007A201F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F51A25EB27E5B40700D77F8E /* ViewController.swift */,
-				F51A261827E5DCBE00D77F8E /* BookingView.xib */,
-				F51A261A27E5E23300D77F8E /* BookingView.swift */,
-				F50EBB2727E81078007A201F /* AqiPlaceView.xib */,
-				F50EBB2927E81099007A201F /* AqiPlaceView.swift */,
-				F50EBB2F27E85ABB007A201F /* BookingDetailView.xib */,
-				F50EBB3127E85AC3007A201F /* BookingDetailView.swift */,
-				F50EBB3327E85FBB007A201F /* AqiPlaceSummaryView.xib */,
-				F50EBB3527E85FC5007A201F /* AqiPlaceSummaryView.swift */,
-				F50EBB4727E8DB79007A201F /* BookingsListView.xib */,
-				F50EBB4927E8DB81007A201F /* BookingsListView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F50EBB0E27E7261D007A201F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				F50EBB0A27E72532007A201F /* ViewModel.swift */,
-				F50EBB2327E77C9C007A201F /* BookingViewModel.swift */,
-				F50EBB2B27E81589007A201F /* AqiPlaceViewModel.swift */,
-				F50EBB3727E869B4007A201F /* BookingDetailViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		F50EBB0F27E72647007A201F /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				F50EBB1027E72656007A201F /* BookingInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
 		F50EBB1227E727AA007A201F /* API */ = {
 			isa = PBXGroup;
 			children = (
-				F50EBB1327E727D0007A201F /* AqiApi.swift */,
-				F50EBB1727E72F99007A201F /* AqiJsonTransformer.swift */,
 				F50EBB1927E72FE2007A201F /* JsonTransformer.swift */,
-				F50EBB3927E88D57007A201F /* BookingApi.swift */,
-				F50EBB3B27E891C1007A201F /* BookingJsonTransformer.swift */,
 				F50EBB5A27EAFB45007A201F /* ForecastApi.swift */,
 				F50EBB5C27EAFE34007A201F /* ForecastJsonTransformer.swift */,
 				F50EBB5E27EB0030007A201F /* DayWeatherTransform.swift */,
@@ -465,7 +364,6 @@
 			isa = PBXGroup;
 			children = (
 				F50EBB6427EB072F007A201F /* Weather */,
-				F50EBB0C27E72604007A201F /* Booking */,
 				F50EBB0827E724EA007A201F /* BaseClasses.swift */,
 				F50EBB2527E7886E007A201F /* Enums.swift */,
 			);
@@ -494,8 +392,6 @@
 		F5254C2527E6DA2C007F1AF0 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				F50EBB1527E72AEA007A201F /* AqiRepository.swift */,
-				F50EBB3D27E89328007A201F /* BookingRepository.swift */,
 				F50EBB7827EC6569007A201F /* WeatherRepository.swift */,
 			);
 			path = Repositories;
@@ -520,9 +416,6 @@
 		F5254C3627E6E0FC007F1AF0 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				F50EBB2127E778C4007A201F /* AqiPlace.swift */,
-				F5254C3727E6E10F007F1AF0 /* Aqi.swift */,
-				F50EBB4127E8C994007A201F /* Booking.swift */,
 				F50EBB4F27EAD074007A201F /* DayTempEntity.swift */,
 				F50EBB5127EAD0DD007A201F /* DayWeatherEntity.swift */,
 				F50EBB5327EAD17F007A201F /* WeatherEntity.swift */,
@@ -543,7 +436,6 @@
 				F51A25E127E5B40700D77F8E /* Frameworks */,
 				F51A25E227E5B40700D77F8E /* Resources */,
 				C57D60F255FB6A0B501A322C /* [CP] Embed Pods Frameworks */,
-				42E4EC589ADD5D623B0BE711 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -582,7 +474,6 @@
 				F51A260127E5B40800D77F8E /* Frameworks */,
 				F51A260227E5B40800D77F8E /* Resources */,
 				E8C2EFB3407955BA760403C8 /* [CP] Embed Pods Frameworks */,
-				586A1E7C52BD5DF5BC3F0AD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -642,12 +533,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F51A261927E5DCBE00D77F8E /* BookingView.xib in Resources */,
-				F50EBB3427E85FBB007A201F /* AqiPlaceSummaryView.xib in Resources */,
-				F50EBB4827E8DB79007A201F /* BookingsListView.xib in Resources */,
 				F50EBB1F27E74796007A201F /* configuration.plist in Resources */,
-				F50EBB3027E85ABB007A201F /* BookingDetailView.xib in Resources */,
-				F50EBB2827E81078007A201F /* AqiPlaceView.xib in Resources */,
 				F51A25F427E5B40800D77F8E /* LaunchScreen.storyboard in Resources */,
 				F51A25F127E5B40800D77F8E /* Assets.xcassets in Resources */,
 				F51A25EF27E5B40700D77F8E /* Main.storyboard in Resources */,
@@ -671,23 +557,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		42E4EC589ADD5D623B0BE711 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Assignment/Pods-Assignment-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Assignment/Pods-Assignment-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Assignment/Pods-Assignment-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5183C20681B2458BE991F1C8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -708,23 +577,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		586A1E7C52BD5DF5BC3F0AD1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Assignment-AssignmentUITests/Pods-Assignment-AssignmentUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Assignment-AssignmentUITests/Pods-Assignment-AssignmentUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Assignment-AssignmentUITests/Pods-Assignment-AssignmentUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5DB5C11F1200A61D3982A680 /* [CP] Check Pods Manifest.lock */ = {
@@ -814,22 +666,14 @@
 			files = (
 				F50EBB5427EAD17F007A201F /* WeatherEntity.swift in Sources */,
 				F50EBB0227E71EED007A201F /* BinaryParamSerializer.swift in Sources */,
-				F50EBB4227E8C994007A201F /* Booking.swift in Sources */,
-				F50EBB3C27E891C1007A201F /* BookingJsonTransformer.swift in Sources */,
 				F50EBB0927E724EA007A201F /* BaseClasses.swift in Sources */,
 				F50EBB2627E7886E007A201F /* Enums.swift in Sources */,
 				F50EBB0727E7213C007A201F /* Configurations.swift in Sources */,
-				F50EBB1127E72656007A201F /* BookingInteractor.swift in Sources */,
 				F50EBAD227E719EE007A201F /* BaseApiClient.swift in Sources */,
 				F50EBB4027E8AE24007A201F /* UIView+Extensions.swift in Sources */,
 				F50EBB5027EAD074007A201F /* DayTempEntity.swift in Sources */,
 				F50EBAEC27E71BC8007A201F /* NetworkingServiceImpl.swift in Sources */,
-				F51A261B27E5E23300D77F8E /* BookingView.swift in Sources */,
-				F50EBB3227E85AC3007A201F /* BookingDetailView.swift in Sources */,
-				F50EBB1627E72AEA007A201F /* AqiRepository.swift in Sources */,
 				F50EBB4427E8D4DB007A201F /* Utils.swift in Sources */,
-				F50EBB1427E727D0007A201F /* AqiApi.swift in Sources */,
-				F51A25EC27E5B40700D77F8E /* ViewController.swift in Sources */,
 				F50EBB5227EAD0DD007A201F /* DayWeatherEntity.swift in Sources */,
 				F50EBB5727EAD629007A201F /* DayWeather.swift in Sources */,
 				F50EBB6C27EB1177007A201F /* ForecastViewController.swift in Sources */,
@@ -838,32 +682,20 @@
 				F50EBB5927EAFAB8007A201F /* ForecastEntity.swift in Sources */,
 				F50EBB0527E7208A007A201F /* Components.swift in Sources */,
 				F50EBB1D27E73F99007A201F /* RxSwift+Extensions.swift in Sources */,
-				F50EBB3A27E88D57007A201F /* BookingApi.swift in Sources */,
 				F51A25E827E5B40700D77F8E /* AppDelegate.swift in Sources */,
-				F50EBB3827E869B4007A201F /* BookingDetailViewModel.swift in Sources */,
 				F50EBAD027E719EE007A201F /* ApiClientImpl.swift in Sources */,
 				F50EBB6E27EB17C6007A201F /* UISearchController+Extensions.swift in Sources */,
-				F50EBB4A27E8DB81007A201F /* BookingsListView.swift in Sources */,
 				F50EBAFB27E71BC8007A201F /* NetworkingService.swift in Sources */,
 				F50EBB7927EC6569007A201F /* WeatherRepository.swift in Sources */,
-				F50EBB1827E72F99007A201F /* AqiJsonTransformer.swift in Sources */,
-				F50EBB3E27E89328007A201F /* BookingRepository.swift in Sources */,
-				F50EBB0B27E72532007A201F /* ViewModel.swift in Sources */,
 				F50EBB7727EC07B4007A201F /* String+Extensions.swift in Sources */,
 				F50EBB1A27E72FE2007A201F /* JsonTransformer.swift in Sources */,
 				F51A25EA27E5B40700D77F8E /* SceneDelegate.swift in Sources */,
 				F50EBB5D27EAFE34007A201F /* ForecastJsonTransformer.swift in Sources */,
-				F50EBB2C27E81589007A201F /* AqiPlaceViewModel.swift in Sources */,
-				F5254C3827E6E10F007F1AF0 /* Aqi.swift in Sources */,
-				F50EBB2227E778C4007A201F /* AqiPlace.swift in Sources */,
 				F50EBB5B27EAFB45007A201F /* ForecastApi.swift in Sources */,
-				F50EBB2A27E81099007A201F /* AqiPlaceView.swift in Sources */,
 				F50EBB7527EB2A3A007A201F /* ForecastCellViewModel.swift in Sources */,
 				F50EBB6A27EB0D1A007A201F /* WeatherViewController.swift in Sources */,
 				F50EBAD127E719EE007A201F /* ApiClient.swift in Sources */,
-				F50EBB2427E77C9C007A201F /* BookingViewModel.swift in Sources */,
 				F50EBB7127EB1E24007A201F /* ForecastViewModel.swift in Sources */,
-				F50EBB3627E85FC5007A201F /* AqiPlaceSummaryView.swift in Sources */,
 				F50EBB0027E71E81007A201F /* JsonParamSerializer.swift in Sources */,
 				F50EBB6327EB029C007A201F /* WeatherTransform.swift in Sources */,
 				F50EBB5F27EB0030007A201F /* DayWeatherTransform.swift in Sources */,
