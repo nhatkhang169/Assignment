@@ -7,6 +7,7 @@
 		<key>Assignment.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>1</integer>
 		</dict>
 	</dict>
@@ -26,6 +27,9 @@
 		<dict>
 			<key>primary</key>
 			<true/>
+=======
+			<integer>10</integer>
+>>>>>>> 27000ae (handle error)
 		</dict>
 	</dict>
 </dict>

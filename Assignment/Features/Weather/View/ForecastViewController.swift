@@ -35,6 +35,14 @@ class ForecastViewController: BaseViewController {
         view.allowsSelection = false
         return view
     }()
+    
+    private lazy var errorView: UILabel = {
+        let view = UILabel(frame: .zero)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.textAlignment = NSTextAlignment.center
+        view.numberOfLines = 0
+        return view
+    }()
 }
 
 // MARK: - UITableViewDataSource
@@ -74,7 +82,18 @@ extension ForecastViewController: UITableViewDelegate {
 extension ForecastViewController {
     
     private func setupUI() {
+        constraintErrorView()
         setupTableView()
+    }
+    
+    private func constraintErrorView() {
+        view.addSubview(errorView)
+        NSLayoutConstraint.activate([
+            errorView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            errorView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100),
+            errorView.topAnchor.constraint(equalTo: view.topAnchor),
+            errorView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -20)
+        ])
     }
     
     private func setupTableView() {
@@ -92,8 +111,22 @@ extension ForecastViewController {
     private func setupRx() {
         disposeBag.addDisposables([
             viewModel.onDidFetchForecast.subscribe(onNext: { [weak self] _ in
-                self?.tableView.reloadData()
+                self?.showForecasts()
             }),
+            
+            viewModel.onError.subscribe(onNext: { [weak self] error in
+                self?.handleError(error)
+            })
         ])
+    }
+    
+    private func handleError(_ error: ApiError) {
+        tableView.isHidden = true
+        errorView.text = error.description
+    }
+    
+    private func showForecasts() {
+        tableView.isHidden = false
+        tableView.reloadData()
     }
 }
