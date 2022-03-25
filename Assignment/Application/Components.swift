@@ -56,7 +56,7 @@ class Components {
     //----------------------------------------------------------------------------------------------
     // MARK: Transformer */
     
-    private lazy var forecastJsonTransformer: ForecastJsonTransformer = {
+    lazy var forecastJsonTransformer: ForecastJsonTransformer = {
         return ForecastJsonTransformer(dayWeatherTransform: dayWeatherTransform)
     }()
     

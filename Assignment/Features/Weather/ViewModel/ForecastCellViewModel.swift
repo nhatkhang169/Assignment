@@ -61,9 +61,3 @@ extension ForecastCellViewModel: ForecastCellViewModelProtocol {
         return URL(string: remoteFilePath)
     }
 }
-
-// MARK - Private
-
-extension ForecastCellViewModel {
-    
-}
