@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T8c-qe-zRG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="Tbd-dU-yYb">
+            <objects>
+                <viewController id="2Lp-UZ-tDo" customClass="WeatherViewController" customModule="Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C3G-vu-Ok8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GLQ-4n-CTY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NsA-1G-VH4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JtZ-jE-Yic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.92753623188409" y="82.366071428571431"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vsb-uJ-L5y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xW8-ON-yui" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marker" translatesAutoresizingMaskIntoConstraints="NO" id="yIp-7Y-MJX">
+                                <rect key="frame" x="197" y="402.5" width="20" height="51.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="TSJ-GH-7xV"/>
+                                    <constraint firstAttribute="width" secondItem="yIp-7Y-MJX" secondAttribute="height" multiplier="40:103" id="yHO-aa-QAo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AQI: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPs-Zf-yai" userLabel="AQI Label">
+                                <rect key="frame" x="284" y="74" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.7693973183631897" green="0.10162967715634884" blue="0.31935630139950766" alpha="0.15149340986394558" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="cyl-0q-NV2"/>
+                                    <constraint firstAttribute="height" constant="40" id="f7q-eC-alb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="BWi-fD-12R">
+                                <rect key="frame" x="324" y="84" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeq-n8-LPG" customClass="BookingView" customModule="Assignment" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="766" width="414" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="hUB-Yo-Pch"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fku-gu-gye"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xeq-n8-LPG" firstAttribute="trailing" secondItem="xW8-ON-yui" secondAttribute="trailing" id="8Dg-cx-H1h"/>
+                            <constraint firstItem="yIp-7Y-MJX" firstAttribute="centerY" secondItem="xW8-ON-yui" secondAttribute="centerY" constant="-25" id="8dm-5c-bWh"/>
+                            <constraint firstItem="xeq-n8-LPG" firstAttribute="leading" secondItem="xW8-ON-yui" secondAttribute="leading" id="9Up-Sg-KNt"/>
+                            <constraint firstItem="Fku-gu-gye" firstAttribute="bottom" secondItem="xW8-ON-yui" secondAttribute="bottom" id="agi-cV-NBx"/>
+                            <constraint firstItem="Fku-gu-gye" firstAttribute="trailing" secondItem="xW8-ON-yui" secondAttribute="trailing" id="bo8-QY-SH0"/>
+                            <constraint firstItem="BWi-fD-12R" firstAttribute="centerX" secondItem="VPs-Zf-yai" secondAttribute="centerX" id="dvK-UM-RMx"/>
+                            <constraint firstItem="Fku-gu-gye" firstAttribute="bottom" secondItem="xeq-n8-LPG" secondAttribute="bottom" constant="5" id="fzi-PQ-Pn8"/>
+                            <constraint firstItem="xW8-ON-yui" firstAttribute="top" secondItem="Fku-gu-gye" secondAttribute="top" id="h0D-iN-y2O"/>
+                            <constraint firstItem="VPs-Zf-yai" firstAttribute="trailing" secondItem="xW8-ON-yui" secondAttribute="trailing" constant="-30" id="iHm-O4-vFf"/>
+                            <constraint firstItem="yIp-7Y-MJX" firstAttribute="centerX" secondItem="xW8-ON-yui" secondAttribute="centerX" id="jLW-Oq-8HI"/>
+                            <constraint firstItem="BWi-fD-12R" firstAttribute="height" secondItem="VPs-Zf-yai" secondAttribute="height" multiplier="0.5" id="lNG-bk-zrW"/>
+                            <constraint firstItem="BWi-fD-12R" firstAttribute="centerY" secondItem="VPs-Zf-yai" secondAttribute="centerY" id="o3m-56-6R4"/>
+                            <constraint firstItem="VPs-Zf-yai" firstAttribute="top" secondItem="xW8-ON-yui" secondAttribute="top" constant="30" id="uVb-Lh-9Ci"/>
+                            <constraint firstItem="BWi-fD-12R" firstAttribute="width" secondItem="VPs-Zf-yai" secondAttribute="width" multiplier="0.2" id="wKb-4m-6dU"/>
+                            <constraint firstItem="xW8-ON-yui" firstAttribute="leading" secondItem="Fku-gu-gye" secondAttribute="leading" id="xk2-yd-xQM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aqiInfoLabel" destination="VPs-Zf-yai" id="LQI-c3-chb"/>
+                        <outlet property="aqiLoadingIndicator" destination="BWi-fD-12R" id="lDr-bY-Qe7"/>
+                        <outlet property="bookingView" destination="xeq-n8-LPG" id="Djd-hi-BFf"/>
+                        <outlet property="mapView" destination="xW8-ON-yui" id="nus-T8-Exf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034.7826086956522" y="79.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q78-Cm-cGf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T8c-qe-zRG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M3F-xt-lsN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2Lp-UZ-tDo" kind="relationship" relationship="rootViewController" id="zaQ-Sm-v8A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UG4-ZI-PdY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-665.21739130434787" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="marker" width="40" height="103"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
