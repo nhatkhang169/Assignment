@@ -5,7 +5,7 @@
 //  Created by azun on 23/03/2022.
 //
 
-struct DayWeather {
+struct DayWeather: Codable {
     let dt: Double
     let averageTemp: Int
     let pressure: Int

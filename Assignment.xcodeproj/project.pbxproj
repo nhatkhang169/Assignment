@@ -66,6 +66,7 @@
 		F50EBB7327EB29FD007A201F /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB7227EB29FD007A201F /* ForecastCell.swift */; };
 		F50EBB7527EB2A3A007A201F /* ForecastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB7427EB2A3A007A201F /* ForecastCellViewModel.swift */; };
 		F50EBB7727EC07B4007A201F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB7627EC07B4007A201F /* String+Extensions.swift */; };
+		F50EBB7927EC6569007A201F /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB7827EC6569007A201F /* WeatherRepository.swift */; };
 		F51A25E827E5B40700D77F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25E727E5B40700D77F8E /* AppDelegate.swift */; };
 		F51A25EA27E5B40700D77F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25E927E5B40700D77F8E /* SceneDelegate.swift */; };
 		F51A25EC27E5B40700D77F8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A25EB27E5B40700D77F8E /* ViewController.swift */; };
@@ -163,6 +164,7 @@
 		F50EBB7227EB29FD007A201F /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		F50EBB7427EB2A3A007A201F /* ForecastCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCellViewModel.swift; sourceTree = "<group>"; };
 		F50EBB7627EC07B4007A201F /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F50EBB7827EC6569007A201F /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		F51A25E427E5B40700D77F8E /* Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51A25E727E5B40700D77F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51A25E927E5B40700D77F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -494,6 +496,7 @@
 			children = (
 				F50EBB1527E72AEA007A201F /* AqiRepository.swift */,
 				F50EBB3D27E89328007A201F /* BookingRepository.swift */,
+				F50EBB7827EC6569007A201F /* WeatherRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -842,6 +845,7 @@
 				F50EBB6E27EB17C6007A201F /* UISearchController+Extensions.swift in Sources */,
 				F50EBB4A27E8DB81007A201F /* BookingsListView.swift in Sources */,
 				F50EBAFB27E71BC8007A201F /* NetworkingService.swift in Sources */,
+				F50EBB7927EC6569007A201F /* WeatherRepository.swift in Sources */,
 				F50EBB1827E72F99007A201F /* AqiJsonTransformer.swift in Sources */,
 				F50EBB3E27E89328007A201F /* BookingRepository.swift in Sources */,
 				F50EBB0B27E72532007A201F /* ViewModel.swift in Sources */,

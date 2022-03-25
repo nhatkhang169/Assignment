@@ -13,9 +13,11 @@ class Configurations {
 
     let apiBaseUrl: String
     let weatherIconUrl: String
+    let cacheExpiredTime: Int
     
     init(dictionary: NSDictionary) {
         apiBaseUrl = dictionary["apiBaseUrl"] as! String
         weatherIconUrl = dictionary["weatherIconUrl"] as! String
+        cacheExpiredTime = (dictionary["cacheExpiredTime"] as? Int)!
     }
 }

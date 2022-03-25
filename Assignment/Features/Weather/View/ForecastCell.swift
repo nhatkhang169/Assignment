@@ -32,6 +32,9 @@ class ForecastCell: UITableViewCell {
         
         weatherIcon.image = nil
         weatherIcon.kf.cancelDownloadTask()
+        
+        loadingIndicatorView.isHidden = false
+        loadingIndicatorView.startAnimating()
     }
     
     var viewModel: ForecastCellViewModelProtocol? = nil {
@@ -76,6 +79,13 @@ class ForecastCell: UITableViewCell {
         view.contentMode = .scaleAspectFit
         return view
     }()
+    
+    private lazy var loadingIndicatorView: UIActivityIndicatorView = {
+        var view = UIActivityIndicatorView(frame: .zero)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.startAnimating()
+        return view
+    }()
 }
 
 // MARK: - Private
@@ -88,6 +98,7 @@ extension ForecastCell {
         constraintHumidityLabel()
         constraintDescLabel()
         constraintWeatherIcon()
+        constraintLoadingIndicator()
     }
     
     private func constraintDateLabel() {
@@ -150,6 +161,17 @@ extension ForecastCell {
         ])
     }
     
+    private func constraintLoadingIndicator() {
+        addSubview(loadingIndicatorView)
+        NSLayoutConstraint.activate([
+            loadingIndicatorView.centerYAnchor.constraint(equalTo: weatherIcon.centerYAnchor),
+            loadingIndicatorView.centerXAnchor.constraint(equalTo: weatherIcon.centerXAnchor),
+            loadingIndicatorView.widthAnchor.constraint(equalTo: weatherIcon.widthAnchor),
+            loadingIndicatorView.heightAnchor.constraint(equalTo: weatherIcon.heightAnchor)
+        ])
+        bringSubviewToFront(weatherIcon)
+    }
+    
     private func fillData() {
         guard let model = viewModel else {
             return
@@ -160,7 +182,9 @@ extension ForecastCell {
         pressureLabel.text = model.pressureText
         humidityLabel.text = model.humidityText
         descLabel.text = model.descText
-        weatherIcon.kf.setImage(with: model.iconUrl)
+        weatherIcon.kf.setImage(with: model.iconUrl) { [weak self] _ in
+            self?.loadingIndicatorView.isHidden = true
+        }
     }
     
     

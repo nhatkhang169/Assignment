@@ -49,6 +49,7 @@ extension WeatherViewController {
         navigationItem.searchController = searchController
         navigationItem.searchController?.searchBar.backgroundColor = .white
         searchController.searchResultsUpdater = self
+        searchController.hidesNavigationBarDuringPresentation = false
         
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = .white

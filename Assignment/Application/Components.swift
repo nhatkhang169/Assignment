@@ -49,6 +49,10 @@ class Components {
         return BookingRepositoryImpl()
     }()
     
+    private lazy var weatherRepository: WeatherRepository = {
+        return WeatherRepositoryImpl(expireTime: self.configurations.cacheExpiredTime)
+    }()
+    
     //----------------------------------------------------------------------------------------------
     // MARK: Api */
 
@@ -106,6 +110,7 @@ class Components {
     }
     
     static func weatherInteractor() -> WeatherInteractor {
-        return WeatherInteractorImpl(forecastApi: instance.forecastApi)
+        return WeatherInteractorImpl(forecastApi: instance.forecastApi,
+                                     weatherRepository: instance.weatherRepository)
     }
 }
