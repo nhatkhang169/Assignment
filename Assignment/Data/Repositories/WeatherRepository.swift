@@ -18,15 +18,17 @@ final class WeatherRepositoryImpl {
     private let dataKey =           "data"
     
     private var expireTime: Int = 0
-    init(expireTime: Int) {
+    private var userDefaults: UserDefaultsProtocol
+    init(expireTime: Int, userDefaults: UserDefaultsProtocol = UserDefaults.standard) {
         self.expireTime = expireTime
+        self.userDefaults = userDefaults
     }
 }
 
 extension WeatherRepositoryImpl: WeatherRepository {
     func getWeather(of city: String, for days: Int) -> [DayWeather]? {
         let key = formatKey(city: city, days: days)
-        guard let dictionary = UserDefaults.standard.dictionary(forKey: key) else {
+        guard let dictionary = userDefaults.dictionary(forKey: key) else {
             return nil
         }
         
@@ -51,7 +53,7 @@ extension WeatherRepositoryImpl: WeatherRepository {
             let dictionary = [dataKey: encodedData,
                               lastStoredTimeKey: Date().timeIntervalSince1970] as [String: Any]
             
-            UserDefaults.standard.set(dictionary, forKey: key)
+            userDefaults.set(dictionary, forKey: key)
         }
     }
     
