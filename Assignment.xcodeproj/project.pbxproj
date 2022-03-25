@@ -23,7 +23,6 @@
 		F50EBB1A27E72FE2007A201F /* JsonTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB1927E72FE2007A201F /* JsonTransformer.swift */; };
 		F50EBB1D27E73F99007A201F /* RxSwift+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB1C27E73F99007A201F /* RxSwift+Extensions.swift */; };
 		F50EBB1F27E74796007A201F /* configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = F50EBB1E27E74796007A201F /* configuration.plist */; };
-		F50EBB2627E7886E007A201F /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB2527E7886E007A201F /* Enums.swift */; };
 		F50EBB2E27E85A4C007A201F /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB2D27E85A4C007A201F /* RoundedCornerView.swift */; };
 		F50EBB4027E8AE24007A201F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB3F27E8AE24007A201F /* UIView+Extensions.swift */; };
 		F50EBB4427E8D4DB007A201F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EBB4327E8D4DB007A201F /* Utils.swift */; };
@@ -66,6 +65,7 @@
 		F51A25F427E5B40800D77F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51A25F227E5B40800D77F8E /* LaunchScreen.storyboard */; };
 		F51A260927E5B40800D77F8E /* AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A260827E5B40800D77F8E /* AssignmentUITests.swift */; };
 		F51A260B27E5B40800D77F8E /* AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51A260A27E5B40800D77F8E /* AssignmentUITestsLaunchTests.swift */; };
+		F598B13B27EDD253004B45E1 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F598B13A27EDD253004B45E1 /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +108,6 @@
 		F50EBB1927E72FE2007A201F /* JsonTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonTransformer.swift; sourceTree = "<group>"; };
 		F50EBB1C27E73F99007A201F /* RxSwift+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Extensions.swift"; sourceTree = "<group>"; };
 		F50EBB1E27E74796007A201F /* configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = configuration.plist; sourceTree = "<group>"; };
-		F50EBB2527E7886E007A201F /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		F50EBB2D27E85A4C007A201F /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 		F50EBB3F27E8AE24007A201F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		F50EBB4327E8D4DB007A201F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -155,6 +154,7 @@
 		F51A260427E5B40800D77F8E /* AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51A260827E5B40800D77F8E /* AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentUITests.swift; sourceTree = "<group>"; };
 		F51A260A27E5B40800D77F8E /* AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F598B13A27EDD253004B45E1 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,7 +457,7 @@
 			children = (
 				F50EBB6427EB072F007A201F /* Weather */,
 				F50EBB0827E724EA007A201F /* BaseClasses.swift */,
-				F50EBB2527E7886E007A201F /* Enums.swift */,
+				F598B13A27EDD253004B45E1 /* Enums.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -759,7 +759,6 @@
 				F50EBB5427EAD17F007A201F /* WeatherEntity.swift in Sources */,
 				F50EBB0227E71EED007A201F /* BinaryParamSerializer.swift in Sources */,
 				F50EBB0927E724EA007A201F /* BaseClasses.swift in Sources */,
-				F50EBB2627E7886E007A201F /* Enums.swift in Sources */,
 				F50EBB0727E7213C007A201F /* Configurations.swift in Sources */,
 				F50EBAD227E719EE007A201F /* BaseApiClient.swift in Sources */,
 				F50EBB4027E8AE24007A201F /* UIView+Extensions.swift in Sources */,
@@ -775,6 +774,7 @@
 				F50EBB0527E7208A007A201F /* Components.swift in Sources */,
 				F50EBB1D27E73F99007A201F /* RxSwift+Extensions.swift in Sources */,
 				F51A25E827E5B40700D77F8E /* AppDelegate.swift in Sources */,
+				F598B13B27EDD253004B45E1 /* Enums.swift in Sources */,
 				F50EBAD027E719EE007A201F /* ApiClientImpl.swift in Sources */,
 				F50EBB6E27EB17C6007A201F /* UISearchController+Extensions.swift in Sources */,
 				F50EBAFB27E71BC8007A201F /* NetworkingService.swift in Sources */,
